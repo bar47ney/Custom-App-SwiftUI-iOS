@@ -47,6 +47,12 @@ extension FontBuilder {
         weight: .regular,
         fontSize: 14,
         lineHeight: 16)
+    
+    static let smallBtnText = FontBuilder(
+        customFont: .ubuntu,
+        weight: .bold,
+        fontSize: 12,
+        lineHeight: 24)
 }
 
 extension Text {

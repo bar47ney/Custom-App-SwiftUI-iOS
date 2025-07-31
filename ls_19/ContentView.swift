@@ -25,19 +25,26 @@ struct ContentView: View {
                     //                        .padding(
                     //                            .vertical, FontBuilder.subTitle.verticalPadding)
                 }.frame(maxWidth: .infinity, maxHeight: 40)
-                Image("calendar")
-                    .resizable()
-                    .scaledToFit()
-                    .padding(.trailing, 16)
-                    .frame(maxWidth: .infinity, alignment: .trailing)
 
             }
             .frame(maxHeight: 56)
             VStack {
-                Text("123")
+                HStack {
+                    Text("235 cal left")
+                        .font(FontBuilder.h2.font)
+                        .lineSpacing(FontBuilder.h2.lineSpacing)
+                        .padding(.vertical, FontBuilder.h2.verticalPadding)
+                    Image(systemName: "arrow.upright.circle")
+                    Text("Add Food")
+                        .font(FontBuilder.smallBtnText.font)
+                        .lineSpacing(FontBuilder.smallBtnText.lineSpacing)
+                        .padding(.vertical, FontBuilder.smallBtnText.verticalPadding)
+                }
             }.frame(maxWidth: .infinity)
                 .background(.white)
-                .clipShape(RoundedCorner(radius: 20, corners: [.topLeft, .topRight]))
+                .clipShape(
+                    RoundedCorner(radius: 20, corners: [.topLeft, .topRight])
+                )
                 .padding(
                     EdgeInsets(top: 20, leading: 18, bottom: 0, trailing: 16)
                 )
