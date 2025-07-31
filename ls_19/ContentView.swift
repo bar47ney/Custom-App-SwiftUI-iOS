@@ -33,6 +33,14 @@ struct ContentView: View {
 
             }
             .frame(maxHeight: 56)
+            VStack {
+                Text("123")
+            }.frame(maxWidth: .infinity)
+                .background(.white)
+                .clipShape(RoundedCorner(radius: 20, corners: [.topLeft, .topRight]))
+                .padding(
+                    EdgeInsets(top: 20, leading: 18, bottom: 0, trailing: 16)
+                )
             Spacer()
         }.frame(maxWidth: .infinity)
             .background(.lightBg)
