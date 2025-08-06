@@ -53,6 +53,12 @@ extension FontBuilder {
         weight: .bold,
         fontSize: 12,
         lineHeight: 24)
+    
+    static let bodyText = FontBuilder(
+        customFont: .ubuntu,
+        weight: .regular,
+        fontSize: 18,
+        lineHeight: 24)
 }
 
 extension Text {
