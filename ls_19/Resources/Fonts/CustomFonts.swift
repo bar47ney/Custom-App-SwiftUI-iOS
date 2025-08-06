@@ -59,6 +59,12 @@ extension FontBuilder {
         weight: .regular,
         fontSize: 18,
         lineHeight: 24)
+    
+    static let bottomBarText = FontBuilder(
+        customFont: .ubuntu,
+        weight: .heavy,
+        fontSize: 12,
+        lineHeight: 16)
 }
 
 extension Text {
